@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teamM — AWS EC2</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.07);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 20px;
+            padding: 48px 56px;
+            max-width: 680px;
+            width: 90%;
+            box-shadow: 0 24px 64px rgba(0,0,0,0.4);
+        }
+
+        .badge {
+            display: inline-block;
+            background: #ff9900;
+            color: #111;
+            font-size: 0.75em;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            font-weight: 700;
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            color: rgba(255,255,255,0.55);
+            font-size: 0.95em;
+            margin-bottom: 36px;
+        }
+
+        .divider {
+            height: 1px;
+            background: rgba(255,255,255,0.12);
+            margin: 28px 0;
+        }
+
+        .section-title {
+            font-size: 0.75em;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: rgba(255,255,255,0.45);
+            margin-bottom: 16px;
+        }
+
+        .member {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 14px 0;
+        }
+
+        .num {
+            width: 32px;
+            height: 32px;
+            background: rgba(255,153,0,0.2);
+            border: 1px solid rgba(255,153,0,0.4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85em;
+            font-weight: 700;
+            color: #ff9900;
+            flex-shrink: 0;
+        }
+
+        .name { font-size: 1em; font-weight: 500; }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 4px;
+        }
+
+        .info-item {
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            padding: 14px 16px;
+        }
+
+        .info-label {
+            font-size: 0.72em;
+            color: rgba(255,255,255,0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .info-value {
+            font-size: 0.92em;
+            font-weight: 600;
+            color: #ff9900;
+        }
+
+        footer {
+            margin-top: 32px;
+            font-size: 0.8em;
+            color: rgba(255,255,255,0.3);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="badge">☁️ AWS EC2 · us-east-1b</div>
+        <h1>Команда teamM</h1>
+        <p class="subtitle">Лабораторна робота №4 — Хмарні технології та Docker</p>
+
+        <div class="section-title">Склад команди</div>
+        <div class="member">
+            <div class="num">1</div>
+            <div class="name">Матвієнко Богдан</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section-title">Інфраструктура</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">Платформа</div>
+                <div class="info-value">Amazon Web Services</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Регіон</div>
+                <div class="info-value">us-east-1b</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Тип інстансу</div>
+                <div class="info-value">t2.micro</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Сервер</div>
+                <div class="info-value">nginx:alpine</div>
+            </div>
+        </div>
+
+        <footer>Розгорнуто у Docker-контейнері · 2026</footer>
+    </div>
+</body>
+</html>
